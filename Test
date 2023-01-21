@@ -10,6 +10,6 @@ TextButton.Size = UDim2.new(0, 487, 0, 50)
 TextButton.Font = Enum.Font.SourceSansBold
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 14.000
-TextButton.Text = "Noob army say:=Booster claimed base"
+TextButton.Text = "Noob army say:Booster claimed base"
 wait(10)
 game.CoreGui.NOOBARMYTEXT:Destroy()
