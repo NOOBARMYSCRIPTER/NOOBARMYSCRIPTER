@@ -20,3 +20,6 @@ local args = {
 game:GetService("ReplicatedStorage").PlaceStructure.ClientPlacedBlueprint:FireServer(unpack(args))
 end
 end)
+DupeSection:NewKeybind("toggle gui", "toggle gui", Enum.KeyCode.RightControl, function()
+	Library:ToggleUI()
+end)
