@@ -1,0 +1,22 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/NOOBARMYSCRIPTER/NOOBARMYSCRIPTER/main/Lib"))()
+local Window = Library.CreateLib("made by NOOB_ARMY VOVKAVRANKGAMEYT", "Midnight")
+
+-- DUPE AXE
+local Tab = Window:NewTab("Spawn")
+local DupeSection = Tab:NewSection("Spawn items")
+
+DupeSection:NewTextBox("Amount Blueprints", "Amount Blueprints", function(p)
+ISP = p
+end)
+
+DupeSection:NewButton("Spawn Blueprints","Spawn selected amount Blueprints", function()
+for i = 1,ISP do
+local args = {
+    [1] = "Wall3",
+    [2] = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame,
+    [3] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("ReplicatedStorage").PlaceStructure.ClientPlacedBlueprint:FireServer(unpack(args))
+end
+end)
